@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+     android:layout_weight="1">
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/tutorial1_activity_java_surface_view"
+        opencv:show_fps="true"
+        opencv:camera_id="any" />
+    
+ 
+    
+       <TextView
+        android:id="@+id/imgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFD700"
+       />
+    
+     
+     
+     <TextView
+        android:id="@+id/imgDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_below="@id/imgTitle"
+ 		android:textAppearance="?android:attr/textAppearanceMedium" 
+ 		android:textColor="#FFFAF0"
+        />
+    
+    
+    
+
+    
+   
+</RelativeLayout>

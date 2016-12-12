@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="1300469447745"
+    token="1342798282830070162" >
+
+    <task
+        name="javac"
+        duration="1403" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="578" />
+    <task
+        name="verifier"
+        duration="55" />
+
+    <artifact
+        location="/home/ar9013/workspace/AndroidStudioProjects/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/outputs/apk/openCVTutorial1CameraPreview-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="1300469447745" >
+        <artifact
+            location="/home/ar9013/workspace/AndroidStudioProjects/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/outputs/apk/openCVTutorial1CameraPreview-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

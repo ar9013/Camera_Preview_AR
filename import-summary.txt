@@ -1,0 +1,644 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+/home/ar9013/workspace/AndroidStudioProjects/OpenCV Tutorial 1 - Camera Preview
+                                                   -        - - -      -       
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* build.gradle
+* build/
+* build/generated/
+* build/generated/source/
+* build/generated/source/aidl/
+* build/generated/source/aidl/debug/
+* build/generated/source/aidl/debug/org/
+* build/generated/source/aidl/debug/org/opencv/
+* build/generated/source/aidl/debug/org/opencv/engine/
+* build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java
+* build/generated/source/aidl/release/
+* build/generated/source/aidl/release/org/
+* build/generated/source/aidl/release/org/opencv/
+* build/generated/source/aidl/release/org/opencv/engine/
+* build/generated/source/aidl/release/org/opencv/engine/OpenCVEngineInterface.java
+* build/generated/source/buildConfig/
+* build/generated/source/buildConfig/debug/
+* build/generated/source/buildConfig/debug/org/
+* build/generated/source/buildConfig/debug/org/opencv/
+* build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java
+* build/generated/source/buildConfig/release/
+* build/generated/source/buildConfig/release/org/
+* build/generated/source/buildConfig/release/org/opencv/
+* build/generated/source/buildConfig/release/org/opencv/BuildConfig.java
+* build/generated/source/r/
+* build/generated/source/r/debug/
+* build/generated/source/r/debug/org/
+* build/generated/source/r/debug/org/opencv/
+* build/generated/source/r/debug/org/opencv/R.java
+* build/generated/source/r/release/
+* build/generated/source/r/release/org/
+* build/generated/source/r/release/org/opencv/
+* build/generated/source/r/release/org/opencv/R.java
+* build/intermediates/
+* build/intermediates/classes/
+* build/intermediates/classes/debug/
+* build/intermediates/classes/debug/org/
+* build/intermediates/classes/debug/org/opencv/
+* build/intermediates/classes/debug/org/opencv/BuildConfig.class
+* build/intermediates/classes/debug/org/opencv/R$attr.class
+* build/intermediates/classes/debug/org/opencv/R$id.class
+* build/intermediates/classes/debug/org/opencv/R$styleable.class
+* build/intermediates/classes/debug/org/opencv/R.class
+* build/intermediates/classes/debug/org/opencv/android/
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$1.class
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$2.class
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$1.class
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$2.class
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3.class
+* build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$1.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$2.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$3.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$4.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$5.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$6.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$7.class
+* build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$1.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewFrame.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener2.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$ListItemAccessor.class
+* build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase.class
+* build/intermediates/classes/debug/org/opencv/android/FpsMeter.class
+* build/intermediates/classes/debug/org/opencv/android/InstallCallbackInterface.class
+* build/intermediates/classes/debug/org/opencv/android/JavaCameraView$1.class
+* build/intermediates/classes/debug/org/opencv/android/JavaCameraView$CameraWorker.class
+* build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraFrame.class
+* build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraSizeAccessor.class
+* build/intermediates/classes/debug/org/opencv/android/JavaCameraView.class
+* build/intermediates/classes/debug/org/opencv/android/LoaderCallbackInterface.class
+* build/intermediates/classes/debug/org/opencv/android/OpenCVLoader.class
+* build/intermediates/classes/debug/org/opencv/android/StaticHelper.class
+* build/intermediates/classes/debug/org/opencv/android/Utils.class
+* build/intermediates/classes/debug/org/opencv/calib3d/
+* build/intermediates/classes/debug/org/opencv/calib3d/Calib3d.class
+* build/intermediates/classes/debug/org/opencv/calib3d/StereoBM.class
+* build/intermediates/classes/debug/org/opencv/calib3d/StereoMatcher.class
+* build/intermediates/classes/debug/org/opencv/calib3d/StereoSGBM.class
+* build/intermediates/classes/debug/org/opencv/core/
+* build/intermediates/classes/debug/org/opencv/core/Algorithm.class
+* build/intermediates/classes/debug/org/opencv/core/Core$MinMaxLocResult.class
+* build/intermediates/classes/debug/org/opencv/core/Core.class
+* build/intermediates/classes/debug/org/opencv/core/CvException.class
+* build/intermediates/classes/debug/org/opencv/core/CvType.class
+* build/intermediates/classes/debug/org/opencv/core/DMatch.class
+* build/intermediates/classes/debug/org/opencv/core/KeyPoint.class
+* build/intermediates/classes/debug/org/opencv/core/Mat.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfByte.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfDMatch.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfDouble.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfFloat.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfFloat4.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfFloat6.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfInt.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfInt4.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfKeyPoint.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfPoint.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfPoint2f.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfPoint3.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfPoint3f.class
+* build/intermediates/classes/debug/org/opencv/core/MatOfRect.class
+* build/intermediates/classes/debug/org/opencv/core/Point.class
+* build/intermediates/classes/debug/org/opencv/core/Point3.class
+* build/intermediates/classes/debug/org/opencv/core/Range.class
+* build/intermediates/classes/debug/org/opencv/core/Rect.class
+* build/intermediates/classes/debug/org/opencv/core/RotatedRect.class
+* build/intermediates/classes/debug/org/opencv/core/Scalar.class
+* build/intermediates/classes/debug/org/opencv/core/Size.class
+* build/intermediates/classes/debug/org/opencv/core/TermCriteria.class
+* build/intermediates/classes/debug/org/opencv/engine/
+* build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class
+* build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub.class
+* build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface.class
+* build/intermediates/classes/debug/org/opencv/features2d/
+* build/intermediates/classes/debug/org/opencv/features2d/DescriptorExtractor.class
+* build/intermediates/classes/debug/org/opencv/features2d/DescriptorMatcher.class
+* build/intermediates/classes/debug/org/opencv/features2d/FeatureDetector.class
+* build/intermediates/classes/debug/org/opencv/features2d/Features2d.class
+* build/intermediates/classes/debug/org/opencv/imgcodecs/
+* build/intermediates/classes/debug/org/opencv/imgcodecs/Imgcodecs.class
+* build/intermediates/classes/debug/org/opencv/imgproc/
+* build/intermediates/classes/debug/org/opencv/imgproc/CLAHE.class
+* build/intermediates/classes/debug/org/opencv/imgproc/Imgproc.class
+* build/intermediates/classes/debug/org/opencv/imgproc/LineSegmentDetector.class
+* build/intermediates/classes/debug/org/opencv/imgproc/Subdiv2D.class
+* build/intermediates/classes/debug/org/opencv/ml/
+* build/intermediates/classes/debug/org/opencv/ml/ANN_MLP.class
+* build/intermediates/classes/debug/org/opencv/ml/Boost.class
+* build/intermediates/classes/debug/org/opencv/ml/DTrees.class
+* build/intermediates/classes/debug/org/opencv/ml/EM.class
+* build/intermediates/classes/debug/org/opencv/ml/KNearest.class
+* build/intermediates/classes/debug/org/opencv/ml/LogisticRegression.class
+* build/intermediates/classes/debug/org/opencv/ml/Ml.class
+* build/intermediates/classes/debug/org/opencv/ml/NormalBayesClassifier.class
+* build/intermediates/classes/debug/org/opencv/ml/RTrees.class
+* build/intermediates/classes/debug/org/opencv/ml/SVM.class
+* build/intermediates/classes/debug/org/opencv/ml/StatModel.class
+* build/intermediates/classes/debug/org/opencv/ml/TrainData.class
+* build/intermediates/classes/debug/org/opencv/objdetect/
+* build/intermediates/classes/debug/org/opencv/objdetect/BaseCascadeClassifier.class
+* build/intermediates/classes/debug/org/opencv/objdetect/CascadeClassifier.class
+* build/intermediates/classes/debug/org/opencv/objdetect/HOGDescriptor.class
+* build/intermediates/classes/debug/org/opencv/objdetect/Objdetect.class
+* build/intermediates/classes/debug/org/opencv/photo/
+* build/intermediates/classes/debug/org/opencv/photo/AlignExposures.class
+* build/intermediates/classes/debug/org/opencv/photo/AlignMTB.class
+* build/intermediates/classes/debug/org/opencv/photo/CalibrateCRF.class
+* build/intermediates/classes/debug/org/opencv/photo/CalibrateDebevec.class
+* build/intermediates/classes/debug/org/opencv/photo/CalibrateRobertson.class
+* build/intermediates/classes/debug/org/opencv/photo/MergeDebevec.class
+* build/intermediates/classes/debug/org/opencv/photo/MergeExposures.class
+* build/intermediates/classes/debug/org/opencv/photo/MergeMertens.class
+* build/intermediates/classes/debug/org/opencv/photo/MergeRobertson.class
+* build/intermediates/classes/debug/org/opencv/photo/Photo.class
+* build/intermediates/classes/debug/org/opencv/photo/Tonemap.class
+* build/intermediates/classes/debug/org/opencv/photo/TonemapDrago.class
+* build/intermediates/classes/debug/org/opencv/photo/TonemapDurand.class
+* build/intermediates/classes/debug/org/opencv/photo/TonemapMantiuk.class
+* build/intermediates/classes/debug/org/opencv/photo/TonemapReinhard.class
+* build/intermediates/classes/debug/org/opencv/utils/
+* build/intermediates/classes/debug/org/opencv/utils/Converters.class
+* build/intermediates/classes/debug/org/opencv/video/
+* build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractor.class
+* build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractorKNN.class
+* build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractorMOG2.class
+* build/intermediates/classes/debug/org/opencv/video/DenseOpticalFlow.class
+* build/intermediates/classes/debug/org/opencv/video/DualTVL1OpticalFlow.class
+* build/intermediates/classes/debug/org/opencv/video/KalmanFilter.class
+* build/intermediates/classes/debug/org/opencv/video/Video.class
+* build/intermediates/classes/debug/org/opencv/videoio/
+* build/intermediates/classes/debug/org/opencv/videoio/VideoCapture.class
+* build/intermediates/classes/debug/org/opencv/videoio/Videoio.class
+* build/intermediates/classes/release/
+* build/intermediates/classes/release/org/
+* build/intermediates/classes/release/org/opencv/
+* build/intermediates/classes/release/org/opencv/BuildConfig.class
+* build/intermediates/classes/release/org/opencv/R$attr.class
+* build/intermediates/classes/release/org/opencv/R$id.class
+* build/intermediates/classes/release/org/opencv/R$styleable.class
+* build/intermediates/classes/release/org/opencv/R.class
+* build/intermediates/classes/release/org/opencv/android/
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$1.class
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$2.class
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$1.class
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3$2.class
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper$3.class
+* build/intermediates/classes/release/org/opencv/android/AsyncServiceHelper.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$1.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$2.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$3.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$4.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$5.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$6.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback$7.class
+* build/intermediates/classes/release/org/opencv/android/BaseLoaderCallback.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$1.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewFrame.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener2.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase$ListItemAccessor.class
+* build/intermediates/classes/release/org/opencv/android/CameraBridgeViewBase.class
+* build/intermediates/classes/release/org/opencv/android/FpsMeter.class
+* build/intermediates/classes/release/org/opencv/android/InstallCallbackInterface.class
+* build/intermediates/classes/release/org/opencv/android/JavaCameraView$1.class
+* build/intermediates/classes/release/org/opencv/android/JavaCameraView$CameraWorker.class
+* build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraFrame.class
+* build/intermediates/classes/release/org/opencv/android/JavaCameraView$JavaCameraSizeAccessor.class
+* build/intermediates/classes/release/org/opencv/android/JavaCameraView.class
+* build/intermediates/classes/release/org/opencv/android/LoaderCallbackInterface.class
+* build/intermediates/classes/release/org/opencv/android/OpenCVLoader.class
+* build/intermediates/classes/release/org/opencv/android/StaticHelper.class
+* build/intermediates/classes/release/org/opencv/android/Utils.class
+* build/intermediates/classes/release/org/opencv/calib3d/
+* build/intermediates/classes/release/org/opencv/calib3d/Calib3d.class
+* build/intermediates/classes/release/org/opencv/calib3d/StereoBM.class
+* build/intermediates/classes/release/org/opencv/calib3d/StereoMatcher.class
+* build/intermediates/classes/release/org/opencv/calib3d/StereoSGBM.class
+* build/intermediates/classes/release/org/opencv/core/
+* build/intermediates/classes/release/org/opencv/core/Algorithm.class
+* build/intermediates/classes/release/org/opencv/core/Core$MinMaxLocResult.class
+* build/intermediates/classes/release/org/opencv/core/Core.class
+* build/intermediates/classes/release/org/opencv/core/CvException.class
+* build/intermediates/classes/release/org/opencv/core/CvType.class
+* build/intermediates/classes/release/org/opencv/core/DMatch.class
+* build/intermediates/classes/release/org/opencv/core/KeyPoint.class
+* build/intermediates/classes/release/org/opencv/core/Mat.class
+* build/intermediates/classes/release/org/opencv/core/MatOfByte.class
+* build/intermediates/classes/release/org/opencv/core/MatOfDMatch.class
+* build/intermediates/classes/release/org/opencv/core/MatOfDouble.class
+* build/intermediates/classes/release/org/opencv/core/MatOfFloat.class
+* build/intermediates/classes/release/org/opencv/core/MatOfFloat4.class
+* build/intermediates/classes/release/org/opencv/core/MatOfFloat6.class
+* build/intermediates/classes/release/org/opencv/core/MatOfInt.class
+* build/intermediates/classes/release/org/opencv/core/MatOfInt4.class
+* build/intermediates/classes/release/org/opencv/core/MatOfKeyPoint.class
+* build/intermediates/classes/release/org/opencv/core/MatOfPoint.class
+* build/intermediates/classes/release/org/opencv/core/MatOfPoint2f.class
+* build/intermediates/classes/release/org/opencv/core/MatOfPoint3.class
+* build/intermediates/classes/release/org/opencv/core/MatOfPoint3f.class
+* build/intermediates/classes/release/org/opencv/core/MatOfRect.class
+* build/intermediates/classes/release/org/opencv/core/Point.class
+* build/intermediates/classes/release/org/opencv/core/Point3.class
+* build/intermediates/classes/release/org/opencv/core/Range.class
+* build/intermediates/classes/release/org/opencv/core/Rect.class
+* build/intermediates/classes/release/org/opencv/core/RotatedRect.class
+* build/intermediates/classes/release/org/opencv/core/Scalar.class
+* build/intermediates/classes/release/org/opencv/core/Size.class
+* build/intermediates/classes/release/org/opencv/core/TermCriteria.class
+* build/intermediates/classes/release/org/opencv/engine/
+* build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class
+* build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface$Stub.class
+* build/intermediates/classes/release/org/opencv/engine/OpenCVEngineInterface.class
+* build/intermediates/classes/release/org/opencv/features2d/
+* build/intermediates/classes/release/org/opencv/features2d/DescriptorExtractor.class
+* build/intermediates/classes/release/org/opencv/features2d/DescriptorMatcher.class
+* build/intermediates/classes/release/org/opencv/features2d/FeatureDetector.class
+* build/intermediates/classes/release/org/opencv/features2d/Features2d.class
+* build/intermediates/classes/release/org/opencv/imgcodecs/
+* build/intermediates/classes/release/org/opencv/imgcodecs/Imgcodecs.class
+* build/intermediates/classes/release/org/opencv/imgproc/
+* build/intermediates/classes/release/org/opencv/imgproc/CLAHE.class
+* build/intermediates/classes/release/org/opencv/imgproc/Imgproc.class
+* build/intermediates/classes/release/org/opencv/imgproc/LineSegmentDetector.class
+* build/intermediates/classes/release/org/opencv/imgproc/Subdiv2D.class
+* build/intermediates/classes/release/org/opencv/ml/
+* build/intermediates/classes/release/org/opencv/ml/ANN_MLP.class
+* build/intermediates/classes/release/org/opencv/ml/Boost.class
+* build/intermediates/classes/release/org/opencv/ml/DTrees.class
+* build/intermediates/classes/release/org/opencv/ml/EM.class
+* build/intermediates/classes/release/org/opencv/ml/KNearest.class
+* build/intermediates/classes/release/org/opencv/ml/LogisticRegression.class
+* build/intermediates/classes/release/org/opencv/ml/Ml.class
+* build/intermediates/classes/release/org/opencv/ml/NormalBayesClassifier.class
+* build/intermediates/classes/release/org/opencv/ml/RTrees.class
+* build/intermediates/classes/release/org/opencv/ml/SVM.class
+* build/intermediates/classes/release/org/opencv/ml/StatModel.class
+* build/intermediates/classes/release/org/opencv/ml/TrainData.class
+* build/intermediates/classes/release/org/opencv/objdetect/
+* build/intermediates/classes/release/org/opencv/objdetect/BaseCascadeClassifier.class
+* build/intermediates/classes/release/org/opencv/objdetect/CascadeClassifier.class
+* build/intermediates/classes/release/org/opencv/objdetect/HOGDescriptor.class
+* build/intermediates/classes/release/org/opencv/objdetect/Objdetect.class
+* build/intermediates/classes/release/org/opencv/photo/
+* build/intermediates/classes/release/org/opencv/photo/AlignExposures.class
+* build/intermediates/classes/release/org/opencv/photo/AlignMTB.class
+* build/intermediates/classes/release/org/opencv/photo/CalibrateCRF.class
+* build/intermediates/classes/release/org/opencv/photo/CalibrateDebevec.class
+* build/intermediates/classes/release/org/opencv/photo/CalibrateRobertson.class
+* build/intermediates/classes/release/org/opencv/photo/MergeDebevec.class
+* build/intermediates/classes/release/org/opencv/photo/MergeExposures.class
+* build/intermediates/classes/release/org/opencv/photo/MergeMertens.class
+* build/intermediates/classes/release/org/opencv/photo/MergeRobertson.class
+* build/intermediates/classes/release/org/opencv/photo/Photo.class
+* build/intermediates/classes/release/org/opencv/photo/Tonemap.class
+* build/intermediates/classes/release/org/opencv/photo/TonemapDrago.class
+* build/intermediates/classes/release/org/opencv/photo/TonemapDurand.class
+* build/intermediates/classes/release/org/opencv/photo/TonemapMantiuk.class
+* build/intermediates/classes/release/org/opencv/photo/TonemapReinhard.class
+* build/intermediates/classes/release/org/opencv/utils/
+* build/intermediates/classes/release/org/opencv/utils/Converters.class
+* build/intermediates/classes/release/org/opencv/video/
+* build/intermediates/classes/release/org/opencv/video/BackgroundSubtractor.class
+* build/intermediates/classes/release/org/opencv/video/BackgroundSubtractorKNN.class
+* build/intermediates/classes/release/org/opencv/video/BackgroundSubtractorMOG2.class
+* build/intermediates/classes/release/org/opencv/video/DenseOpticalFlow.class
+* build/intermediates/classes/release/org/opencv/video/DualTVL1OpticalFlow.class
+* build/intermediates/classes/release/org/opencv/video/KalmanFilter.class
+* build/intermediates/classes/release/org/opencv/video/Video.class
+* build/intermediates/classes/release/org/opencv/videoio/
+* build/intermediates/classes/release/org/opencv/videoio/VideoCapture.class
+* build/intermediates/classes/release/org/opencv/videoio/Videoio.class
+* build/intermediates/incremental-safeguard/
+* build/intermediates/incremental-safeguard/debug/
+* build/intermediates/incremental-safeguard/debug/tag.txt
+* build/intermediates/incremental-safeguard/release/
+* build/intermediates/incremental-safeguard/release/tag.txt
+* build/intermediates/incremental/
+* build/intermediates/incremental/compileDebugAidl/
+* build/intermediates/incremental/compileDebugAidl/dependency.store
+* build/intermediates/incremental/compileReleaseAidl/
+* build/intermediates/incremental/compileReleaseAidl/dependency.store
+* build/intermediates/incremental/mergeDebugAssets/
+* build/intermediates/incremental/mergeDebugAssets/merger.xml
+* build/intermediates/incremental/mergeDebugJniLibFolders/
+* build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+* build/intermediates/incremental/mergeDebugShaders/
+* build/intermediates/incremental/mergeDebugShaders/merger.xml
+* build/intermediates/incremental/mergeReleaseAssets/
+* build/intermediates/incremental/mergeReleaseAssets/merger.xml
+* build/intermediates/incremental/mergeReleaseJniLibFolders/
+* build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml
+* build/intermediates/incremental/mergeReleaseShaders/
+* build/intermediates/incremental/mergeReleaseShaders/merger.xml
+* build/intermediates/incremental/packageDebugResources/
+* build/intermediates/incremental/packageDebugResources/merger.xml
+* build/intermediates/incremental/packageReleaseResources/
+* build/intermediates/incremental/packageReleaseResources/merger.xml
+* build/intermediates/sourceFolderJavaResources/
+* build/intermediates/sourceFolderJavaResources/debug/
+* build/intermediates/sourceFolderJavaResources/debug/org/
+* build/intermediates/sourceFolderJavaResources/debug/org/opencv/
+* build/intermediates/sourceFolderJavaResources/debug/org/opencv/engine/
+* build/intermediates/sourceFolderJavaResources/debug/org/opencv/engine/OpenCVEngineInterface.aidl
+* build/intermediates/sourceFolderJavaResources/release/
+* build/intermediates/sourceFolderJavaResources/release/org/
+* build/intermediates/sourceFolderJavaResources/release/org/opencv/
+* build/intermediates/sourceFolderJavaResources/release/org/opencv/engine/
+* build/intermediates/sourceFolderJavaResources/release/org/opencv/engine/OpenCVEngineInterface.aidl
+* build/intermediates/transforms/
+* build/intermediates/transforms/mergeJavaRes/
+* build/intermediates/transforms/mergeJavaRes/debug/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/main/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/main/org/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/main/org/opencv/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/main/org/opencv/engine/
+* build/intermediates/transforms/mergeJavaRes/debug/folders/2/3/main/org/opencv/engine/OpenCVEngineInterface.aidl
+* build/intermediates/transforms/mergeJavaRes/release/
+* build/intermediates/transforms/mergeJavaRes/release/folders/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/main/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/main/org/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/main/org/opencv/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/main/org/opencv/engine/
+* build/intermediates/transforms/mergeJavaRes/release/folders/2/3/main/org/opencv/engine/OpenCVEngineInterface.aidl
+* build/outputs/
+* build/outputs/aar/
+* build/outputs/aar/OpenCV Library - 3.0.0-debug.aar
+* build/outputs/aar/OpenCV Library - 3.0.0-release.aar
+* build/outputs/lint-results-debug.html
+* build/outputs/lint-results-debug.xml
+* build/outputs/lint-results-debug_files/
+* build/outputs/lint-results-debug_files/hololike.css
+* build/outputs/lint-results-debug_files/lint-error.png
+* build/outputs/lint-results-debug_files/lint-run.png
+* build/outputs/lint-results-debug_files/lint-warning.png
+* build/reports/
+* build/reports/tests/
+* build/reports/tests/debug/
+* build/reports/tests/debug/css/
+* build/reports/tests/debug/css/base-style.css
+* build/reports/tests/debug/css/style.css
+* build/reports/tests/debug/index.html
+* build/reports/tests/debug/js/
+* build/reports/tests/debug/js/report.js
+* build/reports/tests/release/
+* build/reports/tests/release/css/
+* build/reports/tests/release/css/base-style.css
+* build/reports/tests/release/css/style.css
+* build/reports/tests/release/index.html
+* build/reports/tests/release/js/
+* build/reports/tests/release/js/report.js
+* build/test-results/
+* build/test-results/binary/
+* build/test-results/binary/testDebugUnitTest/
+* build/test-results/binary/testDebugUnitTest/output.bin
+* build/test-results/binary/testDebugUnitTest/output.bin.idx
+* build/test-results/binary/testDebugUnitTest/results.bin
+* build/test-results/binary/testReleaseUnitTest/
+* build/test-results/binary/testReleaseUnitTest/output.bin
+* build/test-results/binary/testReleaseUnitTest/output.bin.idx
+* build/test-results/binary/testReleaseUnitTest/results.bin
+* javadoc/
+* javadoc/allclasses-frame.html
+* javadoc/allclasses-noframe.html
+* javadoc/constant-values.html
+* javadoc/help-doc.html
+* javadoc/index-all.html
+* javadoc/index.html
+* javadoc/org/
+* javadoc/org/opencv/
+* javadoc/org/opencv/android/
+* javadoc/org/opencv/android/BaseLoaderCallback.html
+* javadoc/org/opencv/android/CameraBridgeViewBase.CvCameraViewFrame.html
+* javadoc/org/opencv/android/CameraBridgeViewBase.CvCameraViewListener.html
+* javadoc/org/opencv/android/CameraBridgeViewBase.CvCameraViewListener2.html
+* javadoc/org/opencv/android/CameraBridgeViewBase.ListItemAccessor.html
+* javadoc/org/opencv/android/CameraBridgeViewBase.html
+* javadoc/org/opencv/android/FpsMeter.html
+* javadoc/org/opencv/android/InstallCallbackInterface.html
+* javadoc/org/opencv/android/JavaCameraView.JavaCameraSizeAccessor.html
+* javadoc/org/opencv/android/JavaCameraView.html
+* javadoc/org/opencv/android/LoaderCallbackInterface.html
+* javadoc/org/opencv/android/OpenCVLoader.html
+* javadoc/org/opencv/android/Utils.html
+* javadoc/org/opencv/android/package-frame.html
+* javadoc/org/opencv/android/package-summary.html
+* javadoc/org/opencv/android/package-tree.html
+* javadoc/org/opencv/calib3d/
+* javadoc/org/opencv/calib3d/Calib3d.html
+* javadoc/org/opencv/calib3d/StereoBM.html
+* javadoc/org/opencv/calib3d/StereoMatcher.html
+* javadoc/org/opencv/calib3d/StereoSGBM.html
+* javadoc/org/opencv/calib3d/package-frame.html
+* javadoc/org/opencv/calib3d/package-summary.html
+* javadoc/org/opencv/calib3d/package-tree.html
+* javadoc/org/opencv/core/
+* javadoc/org/opencv/core/Algorithm.html
+* javadoc/org/opencv/core/Core.MinMaxLocResult.html
+* javadoc/org/opencv/core/Core.html
+* javadoc/org/opencv/core/CvException.html
+* javadoc/org/opencv/core/CvType.html
+* javadoc/org/opencv/core/DMatch.html
+* javadoc/org/opencv/core/KeyPoint.html
+* javadoc/org/opencv/core/Mat.html
+* javadoc/org/opencv/core/MatOfByte.html
+* javadoc/org/opencv/core/MatOfDMatch.html
+* javadoc/org/opencv/core/MatOfDouble.html
+* javadoc/org/opencv/core/MatOfFloat.html
+* javadoc/org/opencv/core/MatOfFloat4.html
+* javadoc/org/opencv/core/MatOfFloat6.html
+* javadoc/org/opencv/core/MatOfInt.html
+* javadoc/org/opencv/core/MatOfInt4.html
+* javadoc/org/opencv/core/MatOfKeyPoint.html
+* javadoc/org/opencv/core/MatOfPoint.html
+* javadoc/org/opencv/core/MatOfPoint2f.html
+* javadoc/org/opencv/core/MatOfPoint3.html
+* javadoc/org/opencv/core/MatOfPoint3f.html
+* javadoc/org/opencv/core/MatOfRect.html
+* javadoc/org/opencv/core/Point.html
+* javadoc/org/opencv/core/Point3.html
+* javadoc/org/opencv/core/Range.html
+* javadoc/org/opencv/core/Rect.html
+* javadoc/org/opencv/core/RotatedRect.html
+* javadoc/org/opencv/core/Scalar.html
+* javadoc/org/opencv/core/Size.html
+* javadoc/org/opencv/core/TermCriteria.html
+* javadoc/org/opencv/core/package-frame.html
+* javadoc/org/opencv/core/package-summary.html
+* javadoc/org/opencv/core/package-tree.html
+* javadoc/org/opencv/engine/
+* javadoc/org/opencv/engine/package-frame.html
+* javadoc/org/opencv/engine/package-summary.html
+* javadoc/org/opencv/engine/package-tree.html
+* javadoc/org/opencv/features2d/
+* javadoc/org/opencv/features2d/DescriptorExtractor.html
+* javadoc/org/opencv/features2d/DescriptorMatcher.html
+* javadoc/org/opencv/features2d/FeatureDetector.html
+* javadoc/org/opencv/features2d/Features2d.html
+* javadoc/org/opencv/features2d/package-frame.html
+* javadoc/org/opencv/features2d/package-summary.html
+* javadoc/org/opencv/features2d/package-tree.html
+* javadoc/org/opencv/imgcodecs/
+* javadoc/org/opencv/imgcodecs/Imgcodecs.html
+* javadoc/org/opencv/imgcodecs/package-frame.html
+* javadoc/org/opencv/imgcodecs/package-summary.html
+* javadoc/org/opencv/imgcodecs/package-tree.html
+* javadoc/org/opencv/imgproc/
+* javadoc/org/opencv/imgproc/CLAHE.html
+* javadoc/org/opencv/imgproc/Imgproc.html
+* javadoc/org/opencv/imgproc/LineSegmentDetector.html
+* javadoc/org/opencv/imgproc/Subdiv2D.html
+* javadoc/org/opencv/imgproc/package-frame.html
+* javadoc/org/opencv/imgproc/package-summary.html
+* javadoc/org/opencv/imgproc/package-tree.html
+* javadoc/org/opencv/ml/
+* javadoc/org/opencv/ml/ANN_MLP.html
+* javadoc/org/opencv/ml/Boost.html
+* javadoc/org/opencv/ml/DTrees.html
+* javadoc/org/opencv/ml/EM.html
+* javadoc/org/opencv/ml/KNearest.html
+* javadoc/org/opencv/ml/LogisticRegression.html
+* javadoc/org/opencv/ml/Ml.html
+* javadoc/org/opencv/ml/NormalBayesClassifier.html
+* javadoc/org/opencv/ml/RTrees.html
+* javadoc/org/opencv/ml/SVM.html
+* javadoc/org/opencv/ml/StatModel.html
+* javadoc/org/opencv/ml/TrainData.html
+* javadoc/org/opencv/ml/package-frame.html
+* javadoc/org/opencv/ml/package-summary.html
+* javadoc/org/opencv/ml/package-tree.html
+* javadoc/org/opencv/objdetect/
+* javadoc/org/opencv/objdetect/BaseCascadeClassifier.html
+* javadoc/org/opencv/objdetect/CascadeClassifier.html
+* javadoc/org/opencv/objdetect/HOGDescriptor.html
+* javadoc/org/opencv/objdetect/Objdetect.html
+* javadoc/org/opencv/objdetect/package-frame.html
+* javadoc/org/opencv/objdetect/package-summary.html
+* javadoc/org/opencv/objdetect/package-tree.html
+* javadoc/org/opencv/photo/
+* javadoc/org/opencv/photo/AlignExposures.html
+* javadoc/org/opencv/photo/AlignMTB.html
+* javadoc/org/opencv/photo/CalibrateCRF.html
+* javadoc/org/opencv/photo/CalibrateDebevec.html
+* javadoc/org/opencv/photo/CalibrateRobertson.html
+* javadoc/org/opencv/photo/MergeDebevec.html
+* javadoc/org/opencv/photo/MergeExposures.html
+* javadoc/org/opencv/photo/MergeMertens.html
+* javadoc/org/opencv/photo/MergeRobertson.html
+* javadoc/org/opencv/photo/Photo.html
+* javadoc/org/opencv/photo/Tonemap.html
+* javadoc/org/opencv/photo/TonemapDrago.html
+* javadoc/org/opencv/photo/TonemapDurand.html
+* javadoc/org/opencv/photo/TonemapMantiuk.html
+* javadoc/org/opencv/photo/TonemapReinhard.html
+* javadoc/org/opencv/photo/package-frame.html
+* javadoc/org/opencv/photo/package-summary.html
+* javadoc/org/opencv/photo/package-tree.html
+* javadoc/org/opencv/utils/
+* javadoc/org/opencv/utils/Converters.html
+* javadoc/org/opencv/utils/package-frame.html
+* javadoc/org/opencv/utils/package-summary.html
+* javadoc/org/opencv/utils/package-tree.html
+* javadoc/org/opencv/video/
+* javadoc/org/opencv/video/BackgroundSubtractor.html
+* javadoc/org/opencv/video/BackgroundSubtractorKNN.html
+* javadoc/org/opencv/video/BackgroundSubtractorMOG2.html
+* javadoc/org/opencv/video/DenseOpticalFlow.html
+* javadoc/org/opencv/video/DualTVL1OpticalFlow.html
+* javadoc/org/opencv/video/KalmanFilter.html
+* javadoc/org/opencv/video/Video.html
+* javadoc/org/opencv/video/package-frame.html
+* javadoc/org/opencv/video/package-summary.html
+* javadoc/org/opencv/video/package-tree.html
+* javadoc/org/opencv/videoio/
+* javadoc/org/opencv/videoio/VideoCapture.html
+* javadoc/org/opencv/videoio/Videoio.html
+* javadoc/org/opencv/videoio/package-frame.html
+* javadoc/org/opencv/videoio/package-summary.html
+* javadoc/org/opencv/videoio/package-tree.html
+* javadoc/overview-frame.html
+* javadoc/overview-summary.html
+* javadoc/overview-tree.html
+* javadoc/package-list
+* javadoc/resources/
+* javadoc/resources/inherit.gif
+* javadoc/serialized-form.html
+* javadoc/stylesheet.css
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In OpenCV Library - 3.0.0:
+* AndroidManifest.xml => openCVLibrary300/src/main/AndroidManifest.xml
+* assets/ => openCVLibrary300/src/main/assets
+* lint.xml => openCVLibrary300/lint.xml
+* res/ => openCVLibrary300/src/main/res/
+* src/ => openCVLibrary300/src/main/java/
+* src/org/opencv/engine/OpenCVEngineInterface.aidl => openCVLibrary300/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
+In OpenCV Tutorial 1 - Camera Preview:
+* AndroidManifest.xml => openCVTutorial1CameraPreview/src/main/AndroidManifest.xml
+* assets/ => openCVTutorial1CameraPreview/src/main/assets
+* libs/android-support-v4.jar => openCVTutorial1CameraPreview/libs/android-support-v4.jar
+* libs/arm64-v8a/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/arm64-v8a/libopencv_java3.so
+* libs/armeabi-v7a/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/armeabi-v7a/libopencv_java3.so
+* libs/armeabi/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/armeabi/libopencv_java3.so
+* libs/mips/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/mips/libopencv_java3.so
+* libs/mips64/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/mips64/libopencv_java3.so
+* libs/x86/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/x86/libopencv_java3.so
+* libs/x86_64/libopencv_java3.so => openCVTutorial1CameraPreview/src/main/jniLibs/x86_64/libopencv_java3.so
+* res/ => openCVTutorial1CameraPreview/src/main/res/
+* src/ => openCVTutorial1CameraPreview/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
