@@ -77,6 +77,7 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
 
         mCameraIndex = styledAttrs.getInt(R.styleable.CameraBridgeViewBase_camera_id, -1);
 
+
         getHolder().addCallback(this);
         mMaxWidth = MAX_UNSPECIFIED;
         mMaxHeight = MAX_UNSPECIFIED;
@@ -89,6 +90,7 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
      */
     public void setCameraIndex(int cameraIndex) {
         this.mCameraIndex = cameraIndex;
+
     }
 
     public interface CvCameraViewListener {

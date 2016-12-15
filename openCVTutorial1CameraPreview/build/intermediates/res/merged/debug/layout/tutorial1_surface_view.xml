@@ -12,32 +12,51 @@
         android:id="@+id/tutorial1_activity_java_surface_view"
         opencv:show_fps="true"
         opencv:camera_id="any" />
-    
- 
-    
-       <TextView
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+    <TextView
         android:id="@+id/imgTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFD700"
-       />
-    
-     
-     
-     <TextView
+        />
+
+
+    <TextView
         android:id="@+id/imgDisp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"  
-        android:layout_below="@id/imgTitle"
- 		android:textAppearance="?android:attr/textAppearanceMedium" 
- 		android:textColor="#FFFAF0"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFAF0"
         />
-    
-    
-    
 
-    
-   
+    </LinearLayout>
+
+
+
+    <org.opencv.samples.tutorial1.VerticalTextView
+        android:id="@+id/vImgDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <org.opencv.samples.tutorial1.VerticalTextView
+        android:id="@+id/vImgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f000ff"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/vImgDisp" />
+
+
 </RelativeLayout>

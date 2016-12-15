@@ -17,6 +17,15 @@ ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTut
 		ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml:2:11-69
 application
 ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml:7:5-21:19
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml:8:9-41
 	android:icon
@@ -57,7 +66,18 @@ ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTut
 		ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml:27:23-48
 uses-sdk
 ADDED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml:29:5-44
-MERGED from [OpenCV Tutorial 1 - Camera Preview:openCVLibrary300:unspecified] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/OpenCV Tutorial 1 - Camera Preview/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:40
+MERGED from [OpenCV Tutorial 1 - Camera Preview:openCVLibrary300:unspecified] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/OpenCV Tutorial 1 - Camera Preview/openCVLibrary300/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.1] /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml
 		INJECTED from /Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/src/main/AndroidManifest.xml

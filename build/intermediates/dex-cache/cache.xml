@@ -1,2 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_5fcbc46dff16f1294b1a741d4af3e8cf67137383/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_25987f65ad5175fc4b6ffe2c08c4164878b2555b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7925436baf98c60e00d993bee6176fbee4ce0646">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_75dfb68ed30e7fe616694b7af21b9f1deb97e750/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_82f5550755462f10c5929aa34b9fb4ff7257e7e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_add61f98d22e20348b669dc1c8a8c76652c63e35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_fc7275a857e06367c62a5939bb2f50c613fcc08b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="badae364c71572f56b956040c3fc72120146e4cc">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e0318e0408f32e027e7e6b1450be49770dfc809d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_d979e78de5c4ef141cf65f77a65dfe0b2320a426/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_384fcb01da8cbb0bf557d9f7c7f218a9e160fdc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_922afb9bbc836432903dc077b919ccbd7d115771/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b6c138ba72ce38beda559df33d369856854fd6f5">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_ba1d81d9f0611a17b78e708774f46f8a931f8224/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4e04a241482ed86652110ef34dd384b8b593f603/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_9775ad127cd24388ce130c95cf5ca6158b1ccf06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_90c6c14154f596d4556cb214226b65c54166c6e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_fef06a50a269c1e08137468761678ad2ea3fdf7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_7206d88209b8aec3ac1f4e748fa19888e50f3101/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/tools/adt-bundle-mac-x86_64/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_3e156cbf7e984e25bdfead317d3698782099b61a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/luokangyu/Desktop/OpenCV Tutorial 1 - Camera Preview/openCVTutorial1CameraPreview/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_58236ce61ab332160ada9181a0af7a9b8199ced5/classes.dex" />
+    </item>
+
+</items>

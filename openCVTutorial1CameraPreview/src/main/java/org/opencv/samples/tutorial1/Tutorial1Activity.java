@@ -2,19 +2,22 @@ package org.opencv.samples.tutorial1;
 
 import java.io.IOException;
 
-import javax.crypto.spec.GCMParameterSpec;
-
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 
 import android.app.Activity;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Rect;
 import android.hardware.Camera;
-import android.hardware.Camera.Size;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,60 +25,74 @@ import android.os.Message;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.SurfaceView;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextSwitcher;
 import android.widget.TextView;
-
+import android.widget.Toast;
+import android.widget.ViewSwitcher;
 
 
 public class Tutorial1Activity extends Activity implements CvCameraViewListener2 {
 	private Tutorial1Activity activity;
     private static final String TAG = "OCVSample::Activity";
-    
+
 	// FlagDraw
 	private boolean flagDraw =false;
 	private String FLAGDRAW = "FLAGDRAW";
 
     private CameraBridgeViewBase mOpenCvCameraView;
-    private TextView imgTilte, imgDisp;
-    
+    private TextView imgTitle, imgDisp,PPTITLE,PPDISP;
+	private VerticalTextView imgTitle_p,imgDisp_p;
+	private LinearLayout textarea_p ;
+
     private boolean              mIsJavaCamera = true;
     private MenuItem             mItemSwitchCamera = null;
-    
+
  // A key for storing the index of the active image size.
  	private static final String STATE_IMAGE_SIZE_INDEX = "imageSizeIndex";
 
  	// Keys for storing the indices of the active filters.
  	private static final String STATE_IMAGE_DETECTION_FILTER_INDEX = "imageDetectionFilterIndex";
-    
+
  // The filters.
  	private ImageDetectionFilter[] mImageDetectionFilters;
- 	
+
  	// The indices of the active filters.
  	private int mImageDetectionFilterIndex;
- 	
+
  	// Target found index.
  	private int foundTargetIndex = -1;
 
 	private int falseCount = 0;
- 	
+
  // The index of the active image size.
  	private int mImgSizeIndex;
 
  	private Camera mCamera;
 
 	private ImageProcessTask imageProcessTask;
- 	
 
-    private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+	Mat	mRgba,mRgbaF,mRgbaT;
+
+
+
+	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
         public void onManagerConnected(int status) {
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS:
-                
-                	
+
+
                     Log.i(TAG, "OpenCV loaded successfully");
                     mOpenCvCameraView.enableView();
-                    
+
                     final ImageDetectionFilter chengpo;
     				try {
     					chengpo = new ImageDetectionFilter(Tutorial1Activity.this,
@@ -85,7 +102,7 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
     					e.printStackTrace();
     					break;
     				}
-                    
+
     				final ImageDetectionFilter chiayi;
     				try {
     					chiayi = new ImageDetectionFilter(
@@ -109,14 +126,14 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
     					e.printStackTrace();
     					break;
     				}
-    		
+
     				mImageDetectionFilters = new ImageDetectionFilter[] {summer_street, chengpo, chiayi };
-    				  
+
                  break;
-                 
-                 
+
+
                 default:
-                
+
                     super.onManagerConnected(status);
                 break;
             }
@@ -133,32 +150,41 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
         Log.i(TAG, "called onCreate");
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        
-        
+
+
         if (savedInstanceState != null) {
-			
+
 			mImageDetectionFilterIndex = savedInstanceState.getInt(
 					STATE_IMAGE_DETECTION_FILTER_INDEX, 0);
 			mImgSizeIndex = savedInstanceState
 					.getInt(STATE_IMAGE_SIZE_INDEX, 0);
-			
+
 		} else {
-			
+
 			mImgSizeIndex = 0;
 			mImageDetectionFilterIndex = 0;
-			
+
 		}
-        
+
         setContentView(R.layout.tutorial1_surface_view);
 
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.tutorial1_activity_java_surface_view);
-        
-        imgTilte = (TextView) findViewById(R.id.imgTitle);
+
+		//textarea_p = (LinearLayout) findViewById(R.id.textarea_p);
+
+
+		imgTitle = (TextView) findViewById(R.id.imgTitle);
         imgDisp = (TextView) findViewById(R.id.imgDisp);
 
-       
+		imgDisp_p = (VerticalTextView) findViewById(R.id.vImgDisp);
+		imgTitle_p = (VerticalTextView) findViewById(R.id.vImgTitle);
+
+
+
+
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setMaxFrameSize(1280, 720);
+
 
         mOpenCvCameraView.setCvCameraViewListener(this);
     }
@@ -189,7 +215,7 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
-    
+
 
 //    public void onCameraViewStarted(int width, int height) {
 //        android.hardware.Camera.Size res = mOpenCvCameraView.getResolutionList().get(((Tutorial1Activity) mOpenCvCameraView).getResolutionList().size()-1);
@@ -218,10 +244,9 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
         }
 
 
-
-
+		//Core.flip(rgba, rgba, 1);
 			// Apply the active filters.
-    	
+
 //   for(mImageDetectionFilterIndex = 0 ; mImageDetectionFilterIndex < mImageDetectionFilters.length;mImageDetectionFilterIndex++){
 //
 //    		if(mImageDetectionFilterIndex == mImageDetectionFilters.length){
@@ -303,32 +328,47 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
 //    		}
 		return rgba;
     }
-    
+
+
+Boolean isVertical = false;
+	int iVertical = 0;
+
     Handler mHandler = new Handler() {
+
+
         @Override
         public void handleMessage(Message msg) {
-			if(msg.what == 3) {
-			imgTilte.setText("碧潭");
-				imgDisp.setText("靛藍色的潭面是此作的重點。正面的碧潭大橋退至遠處，畫面的重心遠離遊客，平靜澄澈，深不可測的潭面才是畫家的注意力所在。左側的喬木剛剛冒出嫩葉，垂釣的人似乎還感覺到些微涼意。畫中藍色調變化的潭面與天空、遠景，相互呼應，層次豐富，微微蕩漾的水面光景，充滿魅力。");
-			}
         	 if(msg.what == 2) {
-             	imgTilte.setText("嘉義街外");
-             	imgDisp.setText("藝術家： 陳澄波"+"\n"+"年代： 1927"+"\n"+"畫中呈現出規矩方正的學院作風。也許這年暑假回到嘉義時，陳氏製作此畫，為後學者示範西洋畫自文藝復興時期以來所重視的透視法。畫面中活潑的雞群與人物都退避道旁，讓街道筆直地伸向遠方的地平線，並與電線桿會合。前景起伏不整的小路，以及突出的人物活動是全幅的精神所在。");
-             }
+
+				 imgTitle.setText("");
+				 imgDisp.setText("");
+
+				 imgTitle_p.setText("嘉義外街");
+				 imgDisp_p.setText("藝術家： 陳澄波");
+
+			 }
 
             if(msg.what == 1) {
-            	imgTilte.setText("廟口");
+
+				imgTitle.setText("廟口");
             	imgDisp.setText("藝術家： 陳澄波");
+				imgTitle_p.setText("");
+				imgDisp_p.setText("");
             }
 
             if(msg.what == 0){
-            	imgTilte.setText("夏日街景");
+
+				imgTitle.setText("夏日街景");
             	imgDisp.setText("藝術家： 陳澄波"+"\n"+"年代： 1927");
+				imgTitle_p.setText("");
+				imgDisp_p.setText("");
             }
 
 			if(msg.what == -1){
-				imgTilte.setText("");
+				imgTitle.setText("");
 				imgDisp.setText("");
+				imgTitle_p.setText("");
+				imgDisp_p.setText("");
 			}
             super.handleMessage(msg);
         }
@@ -337,8 +377,14 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
 	@Override
 	public void onCameraViewStarted(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
+
+
+		mRgbaT = new Mat(width, height, CvType.CV_8UC4);  // NOTE width,width is NOT a typo
+
 	}
+
+
 
 
 	private class ImageProcessTask extends AsyncTask<Mat,Mat,Mat>{
@@ -429,7 +475,7 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
 
 				}else {
 					falseCount = falseCount + 1;
-					if (falseCount > 10) {
+					if (falseCount > 5) {
 						Thread notfound = new Thread(new Runnable() {
 							@Override
 							public void run() {
@@ -445,7 +491,8 @@ public class Tutorial1Activity extends Activity implements CvCameraViewListener2
 		}
 	}
 
-	
-   
+
+
+
 
 }

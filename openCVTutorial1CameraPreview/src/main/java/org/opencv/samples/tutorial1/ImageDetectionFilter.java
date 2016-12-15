@@ -76,6 +76,7 @@ public final class ImageDetectionFilter {
 	private final Scalar mLineColor4 = new Scalar(255, 0, 255);
 
 
+
 	public ImageDetectionFilter(final Context context, final int referenceImageResourceID) throws IOException {
 
 		// Load the reference image from the app's resources.
